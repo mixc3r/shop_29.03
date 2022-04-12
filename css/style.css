@@ -5,6 +5,7 @@
     --sales-bkg-color: #4F4745;
     --white: #fff;
     --grey: #3A3838DB;
+    --light-grey: #E1E1E1;
 }
 
 body {
@@ -340,19 +341,94 @@ body {
 
 }
 
-.footer__reviews {
-    background-image: url(/Вебинар/lesson-2/img/bg_footer.jpg);
+.footer__main {
+    min-height: 448px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    background-image: url(../img/bg_footer.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
-    height: 448px;
 }
 
-.footer__list {
+.footer__main-hlp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__reviews {
+    width: 360px;
+    height: 225px;
+}
+
+.footer__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__text {
+    padding: 30px 0 0 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
 }
 
-.footer__title {}
+.subscribe {
+    width: 550px;
+}
 
-.footer__btn-subscribe {
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.subscribe__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.subscribe__sub {
+    padding-top: 32px;
+    padding-left: 107px;
+}
+
+.subscribe__label {
+    margin: 0 0 0 -10px;
+}
+
+.subscribe__email {
+    margin: 0 0 0 0;
+    width: 256px;
+    height: 49px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: var(--light-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.subscribe__button {
     width: 100px;
     height: 49px;
     -webkit-border-top-right-radius: 20px;
@@ -367,15 +443,35 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: var(--white);
+    margin-left: -3px;
 }
 
-.footer__list-info {
-    display: flex;
-    justify-content: flex-end;
+.subscribe__button:focus,
+.subscribe__button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.subscribe__button:active {
+    opacity: 1;
+}
+
+.footer__social {
     background-color: var(--black);
-
 }
 
-.footer__item-title-info {
-    display: block;
+.footer__social-wrp {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.footer__social-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
 }
