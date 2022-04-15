@@ -1,0 +1,32 @@
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.sales__item {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 260px;
+    min-height: 260px;
+    /* background-color: var(--sales-bkg-color); */
+    color: rgb(243, 239, 239);
+    )
+}
+
+
+.sales__item--woman {
+    background-image: url(../img/sales-women.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sales__item--shoes {
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    background-position: center;
+    background-size: cover;
+}
