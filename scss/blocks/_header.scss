@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .header {
     background-color: $black;
 }
@@ -9,7 +8,7 @@
     min-height: 75px;
     align-items: center;
     position: relative;
-    margin-bottom: 500px;
+    // margin-bottom: 500px;
 }
 
 .header__list {
@@ -75,57 +74,4 @@
     color: $black;
     text-transform: uppercase;
     padding: 34px 0 24px 34px;
-=======
-.header {
-    background-color: $black;
-}
-
-.header__wrp {
-    display: flex;
-    justify-content: space-between;
-    min-height: 75px;
-    align-items: center;
-}
-
-.header__list {
-    display: flex;
-}
-
-.header__logo {
-    margin: 0 41px 0 0;
-}
-
-.header__link {
-    margin: 0 0 0 34px;
-}
-
-.header__nav {
-    position: absolute;
-    width: 80px;
-    top: 100%;
-    right: 0;
-    background: white;
-    display: none;
-}
-
-.header__nav:hover {
-    display: block;
-}
-
-
-.header__button {
-    border: none;
-    background-color: transparent;
-}
-
-.header__button:hover+.header__nav,
-.header__button:focus+.header__nav {
-    display: block;
-}
-
-.header__nav-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
->>>>>>> 05643b39d8f26bb58128bf8f04eeea991805a82c
 }

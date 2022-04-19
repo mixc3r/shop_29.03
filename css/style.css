@@ -23,7 +23,8 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -32,15 +33,22 @@ body {
 }
 
 .header__wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 75px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  margin-bottom: 500px;
 }
 
 .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -126,15 +134,23 @@ body {
 }
 
 .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0 62px 0;
 }
 
 .brand__title-wrp {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 0 0 0 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F1E4E6;
 }
 
@@ -158,26 +174,55 @@ body {
 }
 
 .sales__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 63px;
 }
 
 .sales__item {
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 360px;
   height: 260px;
   min-height: 260px;
-  color: #f3efef;
+  color: #f00a0a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.saled__text {
+  position: absolute;
 }
 
 .sales__item--woman {
-  background-image: url(../img/sales-women.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sales__item--men {
+  background-position: center;
+  background-size: cover;
+}
+
+.sales__item--kids {
   background-position: center;
   background-size: cover;
 }
@@ -230,7 +275,8 @@ body {
   color: #ffffff;
   border: 1px solid #FFFFFF;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -263,9 +309,13 @@ body {
 }
 
 .catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog__item {
@@ -309,13 +359,15 @@ body {
   background: white;
   color: #FF6A6A;
   border: 1px solid #FF6A6A;
+  -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 
 .catalog__btn:hover {
   background: #FF6A6A;
   color: white;
-  box-shadow: inset 0 0 0 3px #FF6A6A;
+  -webkit-box-shadow: inset 0 0 0 3px #FF6A6A;
+          box-shadow: inset 0 0 0 3px #FF6A6A;
 }
 
 .info {
@@ -326,6 +378,8 @@ body {
 }
 
 .info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: wrap;
 }
@@ -362,17 +416,27 @@ body {
 .footer__main {
   min-height: 448px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(../img/bg_footer.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .footer__main-hlp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__reviews {
@@ -401,10 +465,16 @@ body {
 
 .footer__social-wrp {
   background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 75px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__social-text {
@@ -467,7 +537,9 @@ body {
   border-bottom-left-radius: 20px;
   border: none;
   background: #E1E1E1;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: #222222;
 }
@@ -505,17 +577,27 @@ body {
 .footer__main {
   min-height: 448px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(../img/bg_footer.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .footer__main-hlp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__reviews {
@@ -544,10 +626,16 @@ body {
 
 .footer__social-wrp {
   background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 75px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__social-text {
@@ -557,4 +645,3 @@ body {
   font-style: normal;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
