@@ -1,0 +1,77 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 500px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__link {
+    margin: 0 0 0 34px;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.header__button-icon {
+    background-color: $white;
+}
+
+.header__button-icon:hover,
+.header__button-icon:focus {
+    background-color: $black-gray;
+}
+
+.header__button-icon:active {
+    background-color: $dark-pink;
+}
+
+
+.header__nav {
+    position: absolute;
+    width: 232px;
+    top: 100%;
+    right: 0;
+    background: white;
+    display: none;
+}
+
+// фиксирует ссылки внутри меню при нажатии
+.header__nav:hover {
+    display: block;
+}
+
+// отступы и точки внутри списка
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+// выдвижной блок меню 
+.header__button:hover+.header__nav,
+.header__button:focus+.header__nav {
+    display: block;
+}
+
+.header__title {
+    @include font(14px, 17px, 700);
+    color: $black;
+    text-transform: uppercase;
+    padding: 34px 0 24px 34px;
+}
