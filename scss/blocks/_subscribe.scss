@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .subscribe {
     width: 550px;
 }
@@ -71,4 +72,84 @@
 
 .subscribe__button:active {
     opacity: 1;
+=======
+.subscribe {
+    width: 550px;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.subscribe__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.subscribe__sub {
+    padding-top: 32px;
+    padding-left: 107px;
+}
+
+.subscribe__label {
+    margin: 0 0 0 -10px;
+}
+
+.subscribe__email {
+    margin: 0 0 0 0;
+    width: 256px;
+    height: 49px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: $light-grey;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-decoration: none;
+    color: $black;
+}
+
+.subscribe__button {
+    width: 100px;
+    height: 49px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background: $dark-pink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    margin-left: -3px;
+}
+
+.subscribe__button:focus,
+.subscribe__button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.subscribe__button:active {
+    opacity: 1;
+>>>>>>> 05643b39d8f26bb58128bf8f04eeea991805a82c
 }
