@@ -2,44 +2,47 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 63px;
 }
 
 .sales__item {
     padding: 20px;
     box-sizing: border-box;
+    flex-direction: column;
+    margin: 0 0 32px;
     width: 360px;
     height: 260px;
     min-height: 260px;
-    color: rgb(240, 10, 10);
+    background-color: $sales-bkg-color;
     @include flex-center;
-    flex-direction: column;
+    text-transform: uppercase;
 }
 
-.saled__text {
-    position: absolute;
+.sales__text {
+    @include font(16px, 19px, 400);
+    color: $white;
+}
+
+.sales__title {
+    @include font(30px, 36px, 700);
+    color: $dark-pink;
 }
 
 
-.sales__item--woman {
-    background-position: center;
-    background-size: cover;
+.sales__item--women {
+    background-image: url(../img/sales-women.jpg);
 }
 
 .sales__item--men {
-    background-position: center;
-    background-size: cover;
+    background-image: url(../img/sales-men.jpg);
 }
 
 .sales__item--kids {
-    background-position: center;
-    background-size: cover;
+    background-image: url(../img/sales-kids.jpg);
 }
 
 .sales__item--shoes {
     width: 100%;
-    // margin: 0;
-    // padding-top: 50px;
-    // background-position: center;
-    // background-size: cover;
+    min-height: 180px;
+    background-image: url(../img/sales-acc.jpg);
+    margin-bottom: 97px;
 }

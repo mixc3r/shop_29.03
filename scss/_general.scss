@@ -1,6 +1,8 @@
 body {
    font-family: 'Lato', sans-serif;
-   @include font (14px, 17px, 400);
+   font-size: 14px;
+   line-height: 17px;
+   font-weight: 400;
 }
 
 .img {
