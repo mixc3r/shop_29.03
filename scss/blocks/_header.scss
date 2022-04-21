@@ -1,0 +1,119 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+    position: relative;
+    // margin-bottom: 500px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+    position: absolute;
+    width: 44px;
+    height: 38px;
+}
+
+.header__search {
+    padding: 10px 20px;
+    margin: 0 0 0 90px;
+    border: none;
+    outline: 1px solid black;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.header__form {
+    position: relative;
+}
+
+.header__search:hover {
+    outline: 1px solid $grey-light;
+}
+
+.header__search:focus {
+    background-color: $light-pink;
+    border: 1px solid $grey-light;
+}
+
+.header__form:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 4px;
+    left: 63px;
+    background-image: url(../img/icon/loupe-ico.svg);
+    background-size: 26px 26px;
+}
+
+.header__link {
+    margin: 0 0 0 34px;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.header__button-icon {
+    background-color: $white;
+}
+
+.header__button-icon:hover,
+.header__button-icon:focus {
+    background-color: $black-gray;
+}
+
+.header__button-icon:active {
+    background-color: $dark-pink;
+}
+
+
+.header__nav {
+    position: absolute;
+    width: 232px;
+    top: 100%;
+    right: 0;
+    background: white;
+    display: none;
+}
+
+// фиксирует ссылки внутри меню при нажатии
+.header__nav:hover {
+    display: block;
+}
+
+// отступы и точки внутри списка
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+// выдвижной блок меню 
+.header__button:hover+.header__nav,
+.header__button:focus+.header__nav {
+    display: block;
+}
+
+.header__title {
+    @include font(14px, 17px, 700);
+    color: $black;
+    text-transform: uppercase;
+    padding: 34px 0 24px 34px;
+}
+
+@media (max-width: $tablet-width) {
+    .header__link {
+        display: none;
+    }
+}

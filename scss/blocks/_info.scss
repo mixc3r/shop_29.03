@@ -1,0 +1,34 @@
+.info {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    text-align: center;
+    background: #222224;
+}
+
+.info__list {
+    display: flex;
+    font-weight: wrap;
+}
+
+.info__item {
+    width: 360px;
+    margin-left: 30px;
+}
+
+.info__item:first-child {
+    margin-left: 0;
+}
+
+.info__title {
+    @include font(20px, 24px, 400);
+    margin-top: 28px;
+    margin-bottom: 16px;
+    color: #F8F8F8;
+}
+
+.info__text {
+    @include font(14px, 17px, 400, normal);
+    padding: 0 30px;
+    width: 360px;
+    color: #F8F8F8;
+}
