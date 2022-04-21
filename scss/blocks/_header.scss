@@ -9,6 +9,7 @@
     align-items: center;
     position: relative;
     // margin-bottom: 500px;
+
 }
 
 .header__list {
@@ -57,11 +58,18 @@
 
 .header__link {
     margin: 0 0 0 34px;
+    display: block;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .header__button {
     border: none;
     background-color: transparent;
+
+    @include mobile {}
 }
 
 .header__button-icon {
@@ -110,10 +118,4 @@
     color: $black;
     text-transform: uppercase;
     padding: 34px 0 24px 34px;
-}
-
-@media (max-width: $tablet-width) {
-    .header__link {
-        display: none;
-    }
 }

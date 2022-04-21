@@ -15,6 +15,12 @@
     background-color: $sales-bkg-color;
     @include flex-center;
     text-transform: uppercase;
+    // background-size: cover;
+
+    @include tablet {}
+
+
+    @include mobile {}
 }
 
 .sales__text {

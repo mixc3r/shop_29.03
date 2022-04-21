@@ -9,17 +9,49 @@
     display: flex;
     align-items: center;
     background-color: $light-pink;
+
+    @include tablet {
+        padding: 0 0 0 78px;
+    }
+
+    @include mobile {
+        min-height: 363px;
+        min-width: 375px;
+        padding: 0 0 0 66px;
+    }
+}
+
+.brand__img {
+    @include tablet {
+        width: 50%;
+        min-height: 370px;
+        object-fit: cover;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .brand__title {
     @include font(48px, 58px, 900);
+    text-transform: uppercase;
+
+    @include tablet {
+        @include font(52px, 44px, 900)
+    }
+
+    @include mobile {
+        @include font(38px, 45px, 900)
+    }
 }
 
 .brand__subtitle {
-    @include font(37px, 44px, 700);
+    @include font(32px, 44px, 700);
     display: block;
 }
 
 .brand__subtitle-pink {
+    @include font(32px, 24px, 700);
     color: $dark-pink;
 }
