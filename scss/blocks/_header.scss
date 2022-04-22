@@ -9,7 +9,6 @@
     align-items: center;
     position: relative;
     // margin-bottom: 500px;
-
 }
 
 .header__list {
@@ -70,6 +69,7 @@
     background-color: transparent;
 
     @include mobile {}
+
 }
 
 .header__button-icon {

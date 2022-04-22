@@ -35,6 +35,10 @@
 
 .brand__title {
     @include font(48px, 58px, 900);
+}
+
+.brand__subtitle {
+    @include font(37px, 44px, 700);
     text-transform: uppercase;
 
     @include tablet {
